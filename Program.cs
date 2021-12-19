@@ -11,30 +11,30 @@ namespace Zeta
 
         private static void Game()
         {
-            Console.WriteLine("Enter Name...");
+            Console.WriteLine("Enter Name...\n");
             string name = Console.ReadLine();
-            Console.WriteLine("Enter password");
+            Console.WriteLine("\nEnter password\n");
             string pass = Console.ReadLine();
             if (pass == "rPBF#b@AgH-Ks&^G")
             {
                 for (int i = 1; i <= 10; i++)
                 {
-                    Console.WriteLine("Retreving Packets " + i.ToString() + "/10");
+                    Console.WriteLine("\nRetreving Packets \n" + i.ToString() + "/10");
                 }
                 NextGame();
             }
             else
             {
-                Console.WriteLine("Incorrect password...");
+                Console.WriteLine("\n\nIncorrect password...");
                 return;
             }
         }
 
         private static void NextGame()
         {
-            Console.WriteLine("Enter Target IP...");
+            Console.WriteLine("\nEnter Target IP...");
             string ip = Console.ReadLine();
-            Console.WriteLine($"Launching attack on {ip}\n\nPlease Wait...");
+            Console.WriteLine($"\nLaunching attack on {ip}\nPlease Wait...");
             Utility.KeyPress();
             return;
         }
