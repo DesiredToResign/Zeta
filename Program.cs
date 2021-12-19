@@ -32,7 +32,9 @@ namespace Zeta
 
         private static void NextGame()
         {
-            Console.WriteLine("Launching attack\n\nPlease Wait...");
+            Console.WriteLine("Enter Target IP...");
+            string ip = Console.ReadLine();
+            Console.WriteLine($"Launching attack on {ip}\n\nPlease Wait...");
             Utility.KeyPress();
             return;
         }
